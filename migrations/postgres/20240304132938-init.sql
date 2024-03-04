@@ -38,7 +38,7 @@ CREATE TRIGGER goods_priority_insert_trigger
     
 
 -- +migrate Down
+DROP TRIGGER goods_priority_insert_trigger ON GOODS;
 DROP FUNCTION goods_priority_insert_fnc();
-DROP TRIGGER goods_priority_insert_trigger;
-DROP TABLE PROJECTS;
 DROP TABLE GOODS;
+DROP TABLE PROJECTS;
