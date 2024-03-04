@@ -37,8 +37,6 @@ CREATE TRIGGER goods_priority_insert_trigger
     WHEN (NEW.priority IS NULL)
     EXECUTE PROCEDURE goods_priority_insert_fnc();
 
-INSERT INTO "PROJECTS" (name) VALUES 
-    ('My first project!');
 
 -- +migrate Down
 DROP TRIGGER goods_priority_insert_trigger ON "GOODS";
