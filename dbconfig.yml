@@ -1,0 +1,10 @@
+development:
+  dialect: postgres
+  datasource: dbname=db user=db password=db sslmode=disable port=5458
+  dir: migrations/postgres
+  table: migrations
+release:
+  dialect: postgres
+  datasource: dbname=db user=db password=db sslmode=disable port=5458
+  dir: migrations/postgres
+  table: migrations
